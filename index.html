@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AsaíBol</title>
+<link rel="icon" type="image/png" href="imagenes/logo.jpg">
+<link rel="stylesheet" href="stiles.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+ <!--ENCABEZADO DE LA PÁGINA-->
+<header class="hero-header">
+  <div class="logo">Asaíbol</div>
+  <div class="tagline">Helados combinados con Asaí</div>
+  <!-- Partículas de fruta decorativas -->
+    <div class="fruit-particle" style="left: 10%; animation-delay: 0s;">🍓</div>
+    <div class="fruit-particle" style="left: 20%; animation-delay: 1s;">🍌</div>
+    <div class="fruit-particle" style="left: 30%; animation-delay: 2s;">🥝</div>
+    <div class="fruit-particle" style="left: 70%; animation-delay: 3s;">🍇</div>
+    <div class="fruit-particle" style="left: 85%; animation-delay: 4s;">🫐</div>
+</header>
+<!--BARRA DE NAVEGACIÓN-->
+<nav>
+  <ul>
+     <li><a href="#inicio">Inicio</a></li>
+     <li><a href="#productos">Productos</a></li>
+     <li><a href="#personaliza">Personaliza</a></li>
+     <li><a href="#beneficios">Beneficios</a></li>
+     <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+<!-- Presentación de la heladería-->
+<section class="hero" id="inicio">
+    <div class="container1">
+        <div class="hero-logo">
+            <img src="imagenes/logo.jpg" alt="logo AsaíBol">
+        </div>
+        <div class="hero-content">
+            <h1>Descubre el poder del asaí</h1>
+            <p>
+                Deliciosos helados artesanales elaborados con asaí orgánico de la mejor calidad. 
+                Una experiencia única para tu paladar con todos los beneficios de esta superfruta amazónica.
+            </p>
+            <div class="hero-btn-container">
+                <a href="#productos" class="btn">Ver nuestros productos</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SECCIÓN DE PRODUCTOS/HELADOS/BOLOS-->
+<!-- SECCIÓN DE PRODUCTOS/HELADOS -->
+<section id="productos">
+    <div class="container">
+        <h2 class="section-title fade-in">Nuestros helados de Asaí</h2>
+        <div class="products">
+            <!-- Producto 1: Açaí con Plátano -->
+            <div class="product-card fade-in" data-product="platano" data-calorias="73" data-proteinas="0.9" data-carbohidratos="18" data-grasas="0.2" data-beneficios='["Energía natural","Antioxidantes"]'>
+               <div class="product-img"></div>
+               <div class="product-info">
+                   <h3 class="product-title">Açaí con Plátano</h3>
+                   <p class="product-desc">Açaí batido se mezcla con plátano, creando una textura cremosa y un sabor dulce natural.</p>
+                </div>
+                <div class="product-footer">
+                  <span class="kcal-label">73 kcal</span>
+                  <button class="btn-detalles">Ver detalles</button>
+                </div>
+            </div>    
+
+            <!-- Producto 2: Açaí con Guayaba -->
+            <div class="product-card fade-in" data-product="guayaba" data-calorias="113" data-proteinas="6.6" data-carbohidratos="20" data-grasas="6.6" data-beneficios='["Vitamina C","Digestión"]'>
+                <div class="product-img2"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Açaí con Nido</h3>
+                    <p class="product-desc">Açaí batido mezclado con leche en polvo NIDO®, que le da un sabor lácteo y dulce.</p>
+                </div>
+                <div class="product-footer">
+                  <span class="kcal-label">113 kcal</span>
+                  <button class="btn-detalles">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Producto 3: Açaí con Nutella -->
+            <div class="product-card fade-in" data-product="nutella" data-calorias="122" data-proteinas="5.8" data-carbohidratos="20" data-grasas="7.6" data-beneficios='["Energía","Felicidad"]'>
+                <div class="product-img3"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Açaí con Nutella</h3>
+                    <p class="product-desc">La indulgencia perfecta: açaí cremoso mezclado con deliciosa Nutella para los amantes del chocolate.</p>
+                </div>
+                <div class="product-footer">
+                    <span class="kcal-label">122 kcal </span>
+                    <button class="btn-detalles">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Producto 4: Açaí con Nestlé -->
+            <div class="product-card fade-in" data-product="nestle" data-calorias="104" data-proteinas="2.3" data-carbohidratos="23" data-grasas="2.0" data-beneficios='["Proteínas","Antioxidantes"]'>
+                <div class="product-img4"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Açaí con Nestlé</h3>
+                    <p class="product-desc">Nuestro açaí premium combinado con deliciosos trozos de chocolate Nestlé para un sabor irresistible.</p>
+                </div>
+                <div class="product-footer">
+                    <span class="kcal-label">104 kcal</span>
+                    <button class="btn-detalles">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2 class="section-title fade-in">Nuestros bolos naturales</h2>
+        <div class="products">
+            <div class="product-card fade-in" data-product="maracuya" data-calorias="48" data-proteinas="0.6" data-carbohidratos="12" data-grasas="0.1" data-beneficios='["Proteínas","Antioxidantes"]'>
+                <div class="product-img5"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Bolo de Maracuyá</h3>
+                    <p class="product-desc">Un batido espeso y congelado hecho con la pulpa de maracuyá. Es agrio, intenso y muy refrescante.</p>
+                </div>
+                <div class="product-footer">
+                    <span class="kcal-label">48 kcal</span>
+                    <button class="btn-detalles">Ver detalles</button>
+                </div>
+            </div>
+            <div class="product-card fade-in" data-product="fresa" data-calorias="41" data-proteinas="0.5" data-carbohidratos="10" data-grasas="0.07" data-beneficios='["Proteínas","Antioxidantes"]'>
+                <div class="product-img6"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Bolo de Fresa </h3>
+                    <p class="product-desc">Una versión congelada de un batido de fresa, hecho con fresas naturales congeladas. Muy dulce y popular.</p>
+                </div>
+                <div class="product-footer">
+                    <span class="kcal-label">41 kcal</span>
+                    <button class="btn-detalles">Ver detalles</button>
+                </div>
+            </div>
+            <div class="product-card fade-in" data-product="copoazu" data-calorias="48" data-proteinas="0.1" data-carbohidratos="15" data-grasas="0.9" data-beneficios='["Proteínas","Antioxidantes"]'>
+                <div class="product-img7"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Bolo de Copoazú </h3>
+                    <p class="product-desc">Se utiliza la pulpa del copoazú para crear un batido cremoso, de sabor agridulce y aroma único.</p>
+                </div>
+                <div class="product-footer">
+                    <span class="kcal-label">48 kcal</span>
+                    <button class="btn-detalles">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- MODAL ÚNICO DINÁMICO -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        
+        <div class="modal-header">
+           <div class="modal-icon" id="modal-icon">🍧</div>
+           <h2 id="modal-titulo">Título del Helado</h2>
+        </div>
+        <p id="modal-descripcion">Descripción del helado</p>
+        <div class="modal-nutricion">
+           <div><strong>Calorías:</strong> <span id="modal-calorias">0 kcal</span></div>
+           <div><strong>Proteínas:</strong> <span id="modal-proteinas">0 g</span></div>
+           <div><strong>Carbohidratos:</strong> <span id="modal-carbohidratos">0 g</span></div>
+           <div><strong>Grasas:</strong> <span id="modal-grasas">0 g</span></div>
+         </div>
+        <h3>Beneficios principales</h3>
+        <ul id="modal-beneficios"></ul>
+        <button class="btn-cerrar">Cerrar</button>
+    </div>
+</div>
+<!-- SECCIÓN DE PERSONALIZACIÓN Permite seleccionar base y toppings para personalizar el heladoMuestra información nutricional y beneficios en tiempo real-->
+<section id="personaliza">
+   <div class="container">
+      <h2 class="section-title fade-in">Personaliza tu Asaí</h2>
+      <div class="customize-section fade-in">
+            <p class="párrafo ">
+             Crea tu propio helado de asaí seleccionando tu
+             base favorita y añadiendo los toppings favoritos. 
+             <br>
+             Descubre el valor nutricional de tu creación.
+            </p>
+           <div class="customize-container">
+             <!-- Opciones de personalización -->
+             <div class="customize-options">
+                  <!-- Selector de base -->
+                  <div class="base-selector">
+                      <h3>Elige tu base de açaí</h3>
+                      <div class="base-options">
+                           <div class="base-option" data-base="platano" data-calories=73 data-protein=0.9 >
+                             <div class="base-icon">🍌</div>
+                             <div class="base-name">Açaí con Plátano</div>
+                           </div>
+                           <div class="base-option" data-base="nido" data-calories=113 data-protein=6.6>
+                             <div class="base-icon">🥛</div>
+                             <div class="base-name">Açaí con Nido</div>
+                            </div>
+                            <div class="base-option" data-base="nutella" data-calories=122 data-protein=5.8 >
+                             <div class="base-icon">🍫</div>
+                             <div class="base-name">Açaí con Nutella</div>
+                            </div>
+                            <div class="base-option" data-base="nestle" data-calories=104 data-protein=2.3 >
+                              <div class="base-icon">🍦</div>
+                              <div class="base-name">Açaí con Nestlé</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Selector de toppings -->
+                    <div class="toppings-selector">
+                      <h3>Añade tus toppings favoritos</h3>
+                      <div class="toppings-grid">
+                          <div class="topping-item" data-topping="fresas" data-calories=32 data-protein=0.67 >
+                             <div class="topping-icon">🍓</div>
+                             <div class="topping-name">Fresas</div>
+                            </div>
+                            <div class="topping-item" data-topping="mani" data-calories=567 data-protein=25.8 >
+                             <div class="topping-icon">🥜</div>
+                             <div class="topping-name">mani</div>
+                            </div>
+                            <div class="topping-item" data-topping="chocolate" data-calories=520 data-protein=8 >
+                             <div class="topping-icon">🍫</div>
+                             <div class="topping-name">Chocolate</div>
+                            </div>
+                            <div class="topping-item" data-topping="granola" data-calories=408 data-protein=9.22 >
+                             <div class="topping-icon">🥣</div>
+                             <div class="topping-name">Granola</div>
+                            </div>
+                            <div class="topping-item" data-topping="avena" data-calories=480 data-protein=4 >
+                             <div class="topping-icon">🫓</div>
+                             <div class="topping-name">Avena</div>
+                            </div>
+                            <div class="topping-item" data-topping="gomitas" data-calories=294 data-protein=1 >
+                              <div class="topping-icon">🍬</div>
+                              <div class="topping-name">Gomitas</div>
+                            </div>
+                            <div class="topping-item" data-topping="chispas de colores" data-calories="575" data-protein="17">
+                              <div class="topping-icon">🌈</div>
+                              <div class="topping-name">chispas de colores</div>
+                            </div>
+                            <div class="topping-item" data-topping="semillas-girasol" data-calories="574" data-protein="22">
+                              <div class="topping-icon">🌻</div>
+                              <div class="topping-name">Semillas de girasol</div>
+                            </div>
+                            <div class="topping-item" data-topping="durazno" data-calories="39" data-protein="0.91">
+                                <div class="topping-icon">🍑</div>
+                                <div class="topping-name">Durazno</div>
+                            </div>
+                            <div class="topping-item" data-topping="oreo-frutilla" data-calories="480" data-protein="4">
+                                <div class="topping-icon">🍪</div>
+                                <div class="topping-name">Galletas Oreo</div>
+                            </div>
+                            <div class="topping-item" data-topping="chia" data-calories="462" data-protein="22.5">
+                                <div class="topping-icon">🌱</div>
+                                <div class="topping-name">Chía</div>
+                            </div>
+                            <div class="topping-item" data-topping="sesamo" data-calories="575" data-protein="17">
+                                <div class="topping-icon">🌾</div>
+                                <div class="topping-name">Sésamo</div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Resultados de nutrición y beneficios-->
+                <div class="nutrition-result">
+                  <h3 class="nutrition-title">Tu creación</h3>
+                  <div class="nutrition-info">
+                        <div class="base">
+                            <div class="imagen-base" id="base-icon">🍧</div>
+                            <span class="texto-toppings" id="selected-base">Selecciona una base</span>
+                            <span class="texto-toppings" id="selected-toppings">Sin toppings seleccionados</span>
+                        </div>
+                        <div class="info-nutricional">
+                            <p><strong>Información nutricional</strong></p>
+                            <p><strong>(aproximada por porción🥄)</strong></p>
+                            <div class="valores">
+                                <div class="nutrition-item">
+                                    <span class="nutrition-label">Calorías:</span>
+                                    <span class="nutrition-value" id="calories-value">0 kcal</span>
+                                </div>
+                                <div class="nutrition-item">
+                                    <span class="nutrition-label">Proteínas:</span>
+                                    <span class="nutrition-value" id="protein-value">0 g</span>
+                                </div>
+
+                            </div>
+                            <button id="reset-btn">Reiniciar selección</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--SECCIÓN DE BENEFICIOSInformación sobre los beneficios del açaí-->
+<section id="beneficios">
+  <div class="container">
+      <h2 class="section-title fade-in">Beneficios del Asaí</h2>
+      <div class="benefits">
+         <!-- Beneficio 1: Antioxidantes -->
+            <div class="benefit-card fade-in">
+             <div class="benefit-icon-large">💪</div>
+             <h3 class="benefit-title">Alto en Antioxidantes</h3>
+             <p>El açaí contiene antocianinas que combaten los radicales libres y ayudan a prevenir el envejecimiento prematuro.</p>
+            </div>
+            <!-- Beneficio 2: Salud cardiovascular -->
+            <div class="benefit-card fade-in">
+             <div class="benefit-icon-large">❤</div>
+             <h3 class="benefit-title">Salud Cardiovascular</h3>
+             <p>Ayuda a reducir el colesterol y mejora la circulación sanguínea, contribuyendo a un corazón más saludable.</p>
+            </div>
+            <!-- Beneficio 3: Función cerebral -->
+            <div class="benefit-card fade-in">
+               <div class="benefit-icon-large">🧠</div>
+               <h3 class="benefit-title">Función Cerebral</h3>
+               <p>Sus compuestos pueden mejorar la memoria y proteger el cerebro contra el deterioro neurológico.</p>
+            </div>
+            <!-- Beneficio 4: Sistema inmunológico -->
+            <div class="benefit-card fade-in">
+              <div class="benefit-icon-large">🛡</div>
+              <h3 class="benefit-title">Sistema Inmunológico</h3>
+              <p>Fortalece las defensas naturales del cuerpo gracias a su alto contenido 
+                en vitaminas y minerales esenciales.</p>
+            </div>
+            <!-- Beneficio 5: Digestión -->
+            <div class="benefit-card fade-in">
+             <div class="benefit-icon-large">🌿</div>
+             <h3 class="benefit-title">Mejora la Digestión</h3>
+             <p>Su contenido en fibra ayuda a mantener un sistema digestivo saludable
+                 y promueve la sensación de saciedad.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SECCIÓN DE CONTACTO Información de contacto y ubicación de la tienda-->
+<section id="contacto">
+ <div class="container">
+     <h2 class="section-title fade-in">Contáctanos</h2>
+     <div class="contact-container">
+          <!-- Información de contacto -->
+          <div class="contact-info fade-in">
+                <h3>Información de Contacto</h3>
+                <div class="contact-detail">
+                 <div class="contact-icon">📍</div>
+                    <div>
+                     <strong>Dirección:</strong>
+                     <p>Av. Simón y Patiño, entre Circunvalación y Venezuela</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <strong>Teléfono:</strong>
+                        <p>72281197</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">✉</div>
+                    <div>
+                        <strong>Email:</strong>
+                         <p>@AsaíBol_nutrinat</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">🕒</div>
+                    <div>
+                     <strong>Horario:</strong>
+                     <p>Lunes a Domingo: 11:00 - 17:00</p>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- Mapa de ubicación -->
+            <div class="map-container fade-in">
+              <!-- Mapa simulado (en una implementación real se usaría Google Maps o similar) -->
+               <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d243659.69490163142!2d-66.46664459293014!3d-17.403016091002105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAv.%20Sim%C3%B3n%20y%20Pati%C3%B1o%2C%20%20entre%20Circunvalaci%C3%B3n%20y%20Venezuela!5e0!3m2!1ses!2sbo!4v1760389437657!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="map" id="map"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--PIE DE PÁGINA Información adicional y enlaces-->
+<footer>
+    <div class="footer-content">
+        <!-- Columna 1: Información de la empresa -->
+        <div class="footer-column">
+             <h3>AsaíBol</h3>
+            <p>
+                Ofrecemos los mejores helados de asaí con ingredientes naturales y orgánicos para 
+                cuidar tu salud y deleitar tu paladar.
+            </p>
+            <div class="social-links">
+                <a class="social-icon" href="https://www.instagram.com/asaibol_nutrinat?igsh=MTdmYmd1bnVkZHk5aQ%3D%3D" target="_blank">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a class="social-icon" href="https://www.facebook.com/profile.php?id=100091264866086&rdid=0BIMTU9KCcFaBjxT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CYHTcjs6h%2F" target="_blank">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Columna 2: Enlaces rápidos -->
+        <div class="footer-column">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#personaliza">Personaliza</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <!-- Columna 3: Horarios -->
+        <div class="footer-column">
+            <h3>Horarios</h3>
+            <ul>
+                <li>Lunes a Viernes: 11:00 - 17:00</li>
+                <li>Sábados y Domingos: 11:00 - 17:00</li>
+                <li>Festivos: 12:00 - 18:00</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&copy; 2025 AsaíBol. Todos los derechos reservados. Marioli y Leydi</p>
+    </div>
+</footer>
+<script src="java scrip.js"></script>
+</body>
+ </html>
